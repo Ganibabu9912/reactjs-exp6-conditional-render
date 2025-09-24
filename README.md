@@ -1,12 +1,19 @@
-# React + Vite
+![WhatsApp Image 2025-09-08 at 15 34 24_47a559d6](https://github.com/user-attachments/assets/324a8e19-85a7-4e7a-9de5-120569eb0ee0)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Conditional Rendering Example
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates **conditional rendering in React with Vite**.  
+A toggle button is used to show or hide a component dynamically using React state (`useState`).
 
-## Expanding the ESLint configuration
+### Screenshot
+Below is a screenshot of the app running on `http://localhost:5173/`:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Conditional Rendering Screenshot](./WhatsApp%20Image%202025-09-08%20at%2015.34.24_a7ace5a9.jpg)
+
+### Explanation
+- When you click **Show Component**, a new component appears.  
+- When you click **Hide Component**, the component disappears.  
+- This is achieved using conditional rendering:  
+  ```jsx
+  {isVisible && <MyComponent />}
